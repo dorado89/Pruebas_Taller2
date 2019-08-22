@@ -10,7 +10,16 @@
     ],
     "author": "fox",
     "contributors": [],
-    "dependencies": {
+    "dependencies": {},
+    "jest": {
+        "preset": "jest-puppeteer"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "jest": "^24.9.0",
+        "jest-puppeteer": "^4.3.0",
         "puppeteer": "^1.19.0"
     }
 }
