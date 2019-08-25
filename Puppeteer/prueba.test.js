@@ -3,7 +3,7 @@ var firstName = makeid(8);
 var lastName = makeid(8);
 var username = makeid(8);
 describe("Contact form", () => {
-    test("lead can submit a contact request", async () => {
+    test("user can submit a contact request", async () => {
         await page.goto(APP);
         await page.waitForNavigation();
         await page.click("input[formcontrolname=firstName]");

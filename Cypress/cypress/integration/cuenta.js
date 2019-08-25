@@ -1,5 +1,5 @@
-describe('Los estudiantes login', function() {
-    it('Visits los estudiantes and fails at login', function() {
+describe('Los estudiantes register', function() {
+    it('Visits los estudiantes, creates user, tests login, create login with existing user and fails', function() {
       var nombre = "Mario "+Math.random();
       var apellido = "Lin "+Math.random();
       var correo = makeid(8)+"@sharklasers.com";

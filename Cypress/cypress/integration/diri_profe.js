@@ -1,5 +1,5 @@
-describe('Los estudiantes login', function() {
-    it('Visits los estudiantes and fails at login', function() {
+describe("Los estudiantes teacher's page", function() {
+    it("Visits los estudiantes and shows a teacher's information page", function() {
       var nombre = "Mario "+Math.random();
       var apellido = "Lin "+Math.random();
       var correo = makeid(8)+"@sharklasers.com";
@@ -16,7 +16,7 @@ describe('Los estudiantes login', function() {
       cy.get('.cajaSignUp').find('input[name="acepta"]').click();
       cy.get('.cajaSignUp').contains('Registrarse').click();
       cy.contains('Ok').click();
-      cy.get('form[role="search"').click().find('input[role="combobox"]').type(profe);
+      cy.get('form[role="search"]').click().find('input[role="combobox"]').type(profe);
       cy.contains('Mario Linares Vasquez - Ingeniería de Sistemas').click();
       cy.contains('Pruebas Automáticas');
     });
